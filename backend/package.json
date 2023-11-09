@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon app.js",
+    "bulid":"npm i "
   },
   "keywords": [],
   "author": "",
