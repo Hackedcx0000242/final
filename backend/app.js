@@ -1,10 +1,12 @@
 const app = require("express");
+require("dotenv").config();
 const db = require("mongoose");
 const cors =require("cors");
 const server = app();
-const port = 3089;
+let DATABASE=process.env.DATABASE
+const port = process.env.PORT || 3089;
 const AppRoutes = require("./router/Approute");
-const urldb = "mongodb+srv://saurabhsingh12613:admin123@zomato-batch.qtqtwq7.mongodb.net/Clone?retryWrites=true&w=majority";
+const urldb = DATABASE;
 // when post data is disable post body so enable is use middleware
 server.use(cors())
 server.use(app.json()); // for json type

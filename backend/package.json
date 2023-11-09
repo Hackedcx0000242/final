@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "bulid":"npm i "
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +13,7 @@
     "axios": "^1.6.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.3",
